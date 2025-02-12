@@ -80,20 +80,20 @@ export default function GalleryPage() {
       <Header />
       
       <main className="flex-grow pt-20">
-        <section className="py-20 bg-white">
+        <section className="py-10 md:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Gallery</h1>
-              <p className="text-xl text-gray-600">Capturing moments of empowerment and growth</p>
+            <div className="text-center mb-8 md:mb-16">
+              <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4">Our Gallery</h1>
+              <p className="text-base md:text-xl text-gray-600">Capturing moments of empowerment and growth</p>
             </div>
 
             {/* Category Filter */}
-            <div className="flex justify-center gap-4 mb-12">
+            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
               {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setFilter(category)}
-                  className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-4 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-medium transition-colors ${
                     filter === category
                       ? 'bg-pink-600 text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -105,7 +105,7 @@ export default function GalleryPage() {
             </div>
 
             {/* Image Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
               {filteredImages.map((image, index) => (
                 <div
                   key={image.src}
@@ -117,7 +117,6 @@ export default function GalleryPage() {
                     alt={`Gallery image ${index + 1}`}
                     className="h-full w-full object-cover transition-transform hover:scale-110"
                   />
-                  {/* Removed category display */}
                 </div>
               ))}
             </div>
@@ -127,26 +126,26 @@ export default function GalleryPage() {
 
       {/* Lightbox */}
       {selectedImage !== null && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <button
             className="absolute top-4 right-4 text-white p-2 hover:bg-white/10 rounded-full"
             onClick={() => setSelectedImage(null)}
           >
-            <X className="h-8 w-8" />
+            <X className="h-6 w-6 md:h-8 md:w-8" />
           </button>
           
           <button
             className="absolute left-4 top-1/2 -translate-y-1/2 text-white p-2 hover:bg-white/10 rounded-full"
             onClick={handlePrevious}
           >
-            <ChevronLeft className="h-8 w-8" />
+            <ChevronLeft className="h-6 w-6 md:h-8 md:w-8" />
           </button>
           
           <button
             className="absolute right-4 top-1/2 -translate-y-1/2 text-white p-2 hover:bg-white/10 rounded-full"
             onClick={handleNext}
           >
-            <ChevronRight className="h-8 w-8" />
+            <ChevronRight className="h-6 w-6 md:h-8 md:w-8" />
           </button>
 
           <div className="w-full h-full flex items-center justify-center p-4">
