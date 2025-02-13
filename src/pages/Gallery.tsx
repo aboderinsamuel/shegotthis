@@ -21,6 +21,15 @@ import image15 from '../assets/images/img15.jpg';
 import image16 from '../assets/images/img16.jpg';
 import image17 from '../assets/images/img17.jpg';
 import image18 from '../assets/images/img18.jpg';
+import image19 from '../assets/images/img19.jpg';
+import image20 from '../assets/images/img20.jpg';
+import image21 from '../assets/images/img21.jpg';
+import image22 from '../assets/images/img22.jpg';
+import image23 from '../assets/images/img23.jpg';
+import image24 from '../assets/images/img24.jpg';
+import image25 from '../assets/images/img25.jpg';
+import image26 from '../assets/images/img26.jpg';
+import image27 from '../assets/images/img27.jpg';
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -45,6 +54,15 @@ export default function GalleryPage() {
     { src: image16, category: 'Events' },
     { src: image17, category: 'Sports' },
     { src: image18, category: 'Community' },
+    { src: image19, category: 'Events' },
+    { src: image20, category: 'Sports' },
+    { src: image21, category: 'Community' },
+    { src: image22, category: 'Events' },
+    { src: image23, category: 'Sports' },
+    { src: image24, category: 'Community' },
+    { src: image25, category: 'Events' },
+    { src: image26, category: 'Sports' },
+    { src: image27, category: 'Community' },
   ];
 
   const categories = ['all', ...new Set(images.map(img => img.category))];

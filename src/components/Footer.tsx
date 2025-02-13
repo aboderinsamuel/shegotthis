@@ -67,11 +67,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <address className="text-gray-400 not-italic">
-              123 Empowerment Street<br />
-              City, State 12345<br />
-              <a href="tel:+1234567890" className="hover:text-pink-500">
-                (123) 456-7890
-              </a><br />
+            708 – 75 Eastdale Avenue<br />
+            Toronto, ON, M4C 5N3<br />
+            
               <a href="mailto:info@yesshecan.org" className="hover:text-pink-500">
                 info@yesshecan.org
               </a>
