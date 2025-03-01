@@ -38,7 +38,7 @@ export default function Events() {
   ];
 
   const handleNavigation = useCallback(
-    (direction) => {
+    (direction: string) => {
       if (isTransitioning) return;
 
       setIsTransitioning(true);
