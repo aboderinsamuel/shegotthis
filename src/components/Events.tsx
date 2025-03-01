@@ -1,16 +1,16 @@
 import React from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
-import img23 from "../assets/images/img23.jpg";
+import classroom from "../assets/images/classroom.jpg";
 
 export default function Events() {
   const featuredEvent = {
     title: "April Girls Empowerment Session",
     date: "April 15th, 2025",
     time: "TBA",
-    location: "Room 9, 1250 Markham Road",
+    location: " William G Miller Ps 60 Bennet road Scarborough M1E 3Y3",
     description:
       "A dynamic session focused on self-esteem, leadership, and career mentorship, designed to equip girls with the tools for success.",
-    image: img23,
+    image: classroom,
   };
 
   return (
