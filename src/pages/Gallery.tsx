@@ -3,7 +3,6 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import image1 from '../assets/images/img1.jpg';
 import image2 from '../assets/images/img2.jpg';
 import image3 from '../assets/images/img3.jpg';
 import image4 from '../assets/images/img4.jpg';
@@ -15,7 +14,6 @@ import image9 from '../assets/images/img9.jpg';
 import image10 from '../assets/images/img10.jpg';
 import image11 from '../assets/images/img11.jpg';
 import image12 from '../assets/images/img12.jpg';
-import image13 from '../assets/images/img13.jpg';
 import image14 from '../assets/images/img14.jpg';
 import image15 from '../assets/images/img15.jpg';
 import image16 from '../assets/images/img16.jpg';
@@ -23,9 +21,6 @@ import image17 from '../assets/images/img17.jpg';
 import image18 from '../assets/images/img18.jpg';
 import image19 from '../assets/images/img19.jpg';
 import image20 from '../assets/images/img20.jpg';
-import image21 from '../assets/images/img21.jpg';
-import image22 from '../assets/images/img22.jpg';
-import image23 from '../assets/images/img23.jpg';
 import image24 from '../assets/images/img24.jpg';
 import image25 from '../assets/images/img25.jpg';
 import image26 from '../assets/images/img26.jpg';
@@ -36,7 +31,6 @@ export default function GalleryPage() {
   const [filter, setFilter] = useState<string>('all');
 
   const images = [
-    { src: image1, category: 'Events' },
     { src: image2, category: 'Sports' },
     { src: image3, category: 'Community' },
     { src: image4, category: 'Events' },
@@ -48,7 +42,6 @@ export default function GalleryPage() {
     { src: image10, category: 'Events' },
     { src: image11, category: 'Sports' },
     { src: image12, category: 'Community' },
-    { src: image13, category: 'Events' },
     { src: image14, category: 'Sports' },
     { src: image15, category: 'Community' },
     { src: image16, category: 'Events' },
@@ -56,9 +49,6 @@ export default function GalleryPage() {
     { src: image18, category: 'Community' },
     { src: image19, category: 'Events' },
     { src: image20, category: 'Sports' },
-    { src: image21, category: 'Community' },
-    { src: image22, category: 'Events' },
-    { src: image23, category: 'Sports' },
     { src: image24, category: 'Community' },
     { src: image25, category: 'Events' },
     { src: image26, category: 'Sports' },
