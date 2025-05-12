@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import image2 from "../assets/images/img2.jpg";
 import image3 from "../assets/images/img3.jpg";
 import image4 from "../assets/images/img4.jpg";
-import image5 from "../assets/images/img5.jpg";
+
 import image6 from "../assets/images/img6.jpg";
 import image7 from "../assets/images/img7.jpg";
 import image8 from "../assets/images/img8.jpg";
@@ -53,27 +53,6 @@ export default function GalleryPage() {
   const [filter, setFilter] = useState<string>("all");
 
   const images = [
-    { src: image2, category: "Sports" },
-    { src: image3, category: "Community" },
-    { src: image4, category: "Events" },
-    { src: image5, category: "Sports" },
-    { src: image6, category: "Community" },
-    { src: image7, category: "Events" },
-    { src: image8, category: "Sports" },
-    { src: image9, category: "Community" },
-    { src: image10, category: "Events" },
-    { src: image11, category: "Sports" },
-    { src: image12, category: "Community" },
-    { src: image14, category: "Sports" },
-    { src: image15, category: "Community" },
-    { src: image16, category: "Events" },
-    { src: image17, category: "Sports" },
-    { src: image18, category: "Community" },
-    { src: image19, category: "Events" },
-    { src: image20, category: "Sports" },
-    { src: image24, category: "Community" },
-    { src: image25, category: "Events" },
-    { src: image26, category: "Sports" },
     { src: image28, category: "Sports" },
     { src: image29, category: "Sports" },
     { src: image30, category: "Sports" },
@@ -97,6 +76,26 @@ export default function GalleryPage() {
     { src: image48, category: "Sports" },
     { src: image49, category: "Sports" },
     { src: image50, category: "Sports" },
+    { src: image2, category: "Sports" },
+    { src: image3, category: "Community" },
+    { src: image4, category: "Events" },
+    { src: image6, category: "Community" },
+    { src: image7, category: "Events" },
+    { src: image8, category: "Sports" },
+    { src: image9, category: "Community" },
+    { src: image10, category: "Events" },
+    { src: image11, category: "Sports" },
+    { src: image12, category: "Community" },
+    { src: image14, category: "Sports" },
+    { src: image15, category: "Community" },
+    { src: image16, category: "Events" },
+    { src: image17, category: "Sports" },
+    { src: image18, category: "Community" },
+    { src: image19, category: "Events" },
+    { src: image20, category: "Sports" },
+    { src: image24, category: "Community" },
+    { src: image26, category: "Sports" },
+    { src: image25, category: "Events" },
   ];
 
   const categories = ["all", ...new Set(images.map((img) => img.category))];

@@ -70,8 +70,8 @@ export default function Footer() {
             708 – 75 Eastdale Avenue<br />
             Toronto, ON, M4C 5N3<br />
             
-              <a href="mailto:info@yesshecan.org" className="hover:text-pink-500">
-                info@yesshecan.org
+              <a href="mailto:yesshecantoronto@gmail.com" className="hover:text-pink-500">
+                yesshecantoronto@gmail.com
               </a>
             </address>
           </div>
